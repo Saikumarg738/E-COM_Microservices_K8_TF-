@@ -4,9 +4,9 @@ pipeline {
 
     parameters {
         choice(
-            name: 'ACTION',
+            name: 'Event',
             choices: ['apply', 'destroy'],
-            description: '🔧 Select the Terraform action to perform (apply = create/update, destroy = delete all)'
+            description: 'Select terraform action to perform'
         )
     }
 
